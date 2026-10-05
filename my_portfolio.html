@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        /* background-color: #07111F; */
+
+        background:
+            radial-gradient(circle at 50% 20%,
+                rgba(30, 58, 86, 0.35),
+                transparent 40%),
+            #07111F;
+        padding: 0px 40px;
+
+
+    }
+
+    .appbar {
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        font-family: sans-serif;
+        border: 1px solid #1E3A56;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        padding: 20px;
+    }
+
+    .appp {
+        padding-left: 70px;
+    }
+
+    .appp:hover {
+        text-decoration: underline;
+        color: lightblue;
+        transition: 2s;
+        transform: scale(1.08, 1.08);
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .div1 {
+        height: 50vh;
+        color: white;
+
+        background:
+            linear-gradient(to right,
+                #07111F,
+                rgba(255, 255, 255, 0.028),
+                rgba(255, 255, 255, 0.028)),
+            url('./image1.jpg');
+
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 50% 100%;
+        border: 1px solid #1E3A56;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        align-content: center;
+    }
+
+    h1 {
+        background: linear-gradient(to right, #8ecbff, #ffffff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .subdiv1 {
+        background-color: transparent;
+        margin-top: 10px;
+        width: 500px;
+        align-items: center;
+        padding-left: 60px;
+    }
+
+    .div2 {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-evenly;
+        height: 50vh;
+        border: 1px solid #1E3A56;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        align-content: center;
+        color: white;
+        align-items: center;
+
+    }
+
+    .sub1div2 {
+        width: 50vh;
+    }
+
+
+    .div3card {
+        border: 1px solid #1E3A56;
+        padding: 10px 20px;
+        border-radius: 15px;
+        margin: 60px;
+        width: min-content;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .div3card:hover {
+        transition: 1s;
+        transform: scale(1.08, 1.08);
+    }
+
+    .div3card img {
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .d3row {
+        display: flex;
+
+        justify-content: space-evenly;
+    }
+
+    .d3word {
+        margin: 10px;
+        padding: 5px 10px;
+        text-align: center;
+        border: 1px solid #1E3A56;
+        border-radius: 10px;
+        background-color: #1E3A56;
+    }
+
+    .d3row2 {
+        display: flex;
+        /* flex-wrap: wrap; */
+
+        justify-content: start;
+        align-items: center;
+    }
+
+    .dev3 {
+        border: 1px solid #1E3A56;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        display: flex;
+        flex-wrap: wrap;
+
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+
+    }
+
+    .dev4 {
+        text-align: center;
+        color: white;
+        border: 1px solid #1E3A56;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        padding: 40px 20px;
+        font-family: sans-serif;
+    }
+
+    .skillcard {
+        width: 200px;
+        height: min-content;
+        border: 1px solid #1E3A56;
+        padding: 30px 10px;
+        align-content: center;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .skillcard:hover {
+        transition: 1s;
+        transform: scale(1.08, 1.08);
+        background-color: #8ecbff;
+        border: 2px solid #1E3A56;
+        color: #1E3A56;
+    }
+
+    .skillcardalign {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .div5row {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-evenly;
+        color: white;
+        font-family: sans-serif;
+        padding: 30px 20px;
+
+
+    }
+
+
+    .div5 i {
+        font-size: 40px;
+        margin: 10px;
+        color: #8ecbff;
+        transition: 0.3s;
+    }
+
+    .div5 i:hover {
+        color: white;
+        transform: translateY(-4px);
+    }
+
+    input {
+        width: 500px;
+        height: 40px;
+        margin: 20px 0px;
+        border: 1px solid #1E3A56;
+        border-radius: 15px;
+        background-color: #1e3a5628;
+        color: white;
+        border: 1px solid white;
+
+
+    }
+
+    textarea {
+        width: 500px;
+        border-radius: 15px;
+        height: 150px;
+        margin: 20px 0px;
+        background-color: #1e3a5628;
+        color: white;
+        border: 1px solid white;
+
+    }
+
+    button {
+        background-color: #1E3A56;
+        color: white;
+        border: none;
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+        border-radius: 15px;
+        border: 1px solid white;
+
+    }
+
+    button:hover {
+        transform: scale(1.08, 1.08);
+        transition: 1s;
+    }
+
+    .sub2div5 {
+        width: 30%;
+
+    }
+
+    .div5sub2row {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: start;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <!-- app bar start -->
+    <div class="row">
+        <div class="appbar">
+            <a href="#home" class="appp col-lg-2.4 col-md-2.4 col-sm-2.4">Home</a>
+            <a href="#about" class="appp col-lg-2.4 col-md-2.4 col-sm-2.4">About</a>
+            <a href="#projects" class="appp col-lg-2.4 col-md-2.4 col-sm-2.4">Project</a>
+            <a href="#skills" class="appp col-lg-2.4 col-md-2.4 col-sm-2.4">Skills</a>
+            <a href="#contact" class="appp col-lg-2.4 col-md-2.4 col-sm-2.4">Contact</a>
+
+        </div>
+        <!-- app bar end -->
+
+        <!-- home page start -->
+
+        <div class="div1" id="home">
+            <div class="subdiv1 col-lg-6 col-md-6 col-sm-6">
+                <h5 style="font-family: sans-serif;">Nice to meet you,</h5>
+                <h1 style="font-family: sans-serif;">AMAL S</h1>
+                <h3 style="font-family: sans-serif;">Flutter + Python Full Stack Developer</h3>
+                <p style="font-family: sans-serif;">I build mobile apps and web applications that are simple,useful and
+                    focused on real world problems</p>
+            </div>
+        </div>
+
+        <!-- home page end -->
+
+        <!-- about me start -->
+
+        <div class="div2" id="about">
+            <div class="sub1div2 col-lg-6 col-md-6 col-sm-6">
+                <h1 style="font-family: sans-serif;">
+                    About me
+                </h1>
+                <p style="font-family: sans-serif;">
+                    I'm a developer who enjoys turning ideas into useful applications and websites. I started my journey
+                    with Flutter and mobile app development, and I'm currently expanding my skills into Python
+                    full-stack
+                    development.
+                </p>
+                <pstyle="font-family: sans-serif;">
+                    I like learning by building real projects, experimenting with new technologies, and solving problems
+                    along the way. I'm always looking for opportunities to improve my skills and create things that are
+                    simple, practical, and useful.
+                    </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img src="./aboutme.png" alt="" height="300vh">
+            </div>
+        </div>
+
+        <!-- about me end -->
+
+        <!-- Project page start -->
+
+        <div class="dev3" id="projects">
+            <h1 style="color: white;">My Projects</h1>
+            <div class="div3card col-lg-4 col-md-6 col-sm-12">
+
+                <div class="d3row2">
+                    <img src="./list2local.png" alt="" height="80px">
+                    <div>
+                        <p>List2Locat</p>
+                        <p>Agrocery order app that connects customers with local shop</p>
+                    </div>
+                </div>
+                <div class="d3row">
+                    <p class="d3word">Flutter</p>
+                    <p class="d3word">Dart</p>
+                    <p class="d3word">Firebace</p>
+                </div>
+            </div>
+        </div>
+        <!-- my project page end -->
+        <!-- my skill page start -->
+
+        <div class="dev4" id="skills">
+
+            <div>
+                <h1>My Skills</h1>
+
+                <div class="skillcardalign ">
+                    <div class="skillcard col-lg-5 col-md-5 col-sm-2">
+                        <i class="devicon-flutter-plain colored"></i>
+                        <p>Flutter</p>
+                    </div>
+                    <div class="skillcard col-lg-5 col-md-5 col-sm-2">
+                        <i class="devicon-dart-plain colored"></i>
+                        <p>Dart</p>
+                    </div>
+                    <div class="skillcard col-lg-5 col-md-5 col-sm-2">
+                        <i class="devicon-firebase-plain colored"></i>
+                        <p>firebase</p>
+                    </div>
+                    <div class="skillcard col-lg-5 col-md-5 col-sm-2">
+                        <i class="devicon-python-plain colored"></i>
+                        <p>python</p>
+                    </div>
+                    <div class="skillcard col-lg-5 col-md-5 col-sm-2">
+                        <i class="devicon-html5-plain colored"></i>
+                        <p>html</p>
+                    </div>
+                    <div class="skillcard col-lg-5 col-md-5 col-sm-2">
+                        <i class="devicon-css3-plain colored"></i>
+                        <p>css</p>
+                    </div>
+                    <div class="skillcard col-lg-5 col-md-5 col-sm-2">
+                        <i class="devicon-bootstrap-plain colored"></i>
+                        <p>bootstrap</p>
+                    </div>
+                    <div class="skillcard col-lg-5 col-md-5 col-sm-2">
+                        <i class="devicon-git-plain colored"></i>
+                        <p>git</p>
+                    </div>
+                    <div class="skillcard col-lg-5 col-md-5 col-sm-2">
+                        <i class="devicon-github-original"></i>
+                        <p>github</p>
+                    </div>
+                    <div class="skillcard col-lg-5 col-md-5 col-sm-2">
+                        <i class="devicon-vscode-plain colored"></i>
+                        <p>vscode</p>
+                    </div>
+                    <div class="skillcard col-lg-5 col-md-5 col-sm-2">
+                        <i class="devicon-androidstudio-plain colored"></i>
+                        <p>androidstudio</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- myskill end -->
+
+        <!-- contact me start -->
+
+        <div class="div5" id="contact">
+            <h1 style="text-align: center;">Contact</h1>
+            <div class="div5row">
+
+                <div class="sub1div5 col-lg-6 col-md-6 col-sm-12">
+                    <h1>Lets Get In Touch</h1>
+                    <label for="">Name</label><br>
+                    <input type="text"><br>
+                    <label for="">Email</label><br>
+                    <input type="text"><br>
+                    <label for="">Message</label><br>
+                    <textarea name="" id="" cols="40" rows="10"></textarea> <br>
+                    <button>Submit</button>
+                </div>
+                <div class="sub2div5 col-lg-16 col-md-6 col-sm-12">
+                    <div>
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </div>
+                    <p>Feel free to reach out if you have a projecct in mind want to collaborate or just want to say
+                        hello!</p>
+                    <div class="div5sub2row">
+                        <i style="font-size: 15px;" class="fa-solid fa-envelope"></i>
+                        <p>amalsubala@gmail.com</p>
+                    </div>
+                    <div class="div5sub2row">
+                        <i style="font-size: 15px;" class="fa-solid fa-phone"></i>
+                        <p>9745434737</p>
+                    </div>
+                    <div class="div5sub2row">
+                        <i style="font-size: 15px;" class="fa-solid fa-location-dot"></i>
+                        <p>Kozhikode,kerala</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
